@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5rem;
+    background-image: url("desktop\ background.jpg");
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.regform{
+    background-color: hsla(0, 0%, 0%, 0.322);
+    width: 50%;
+    margin: 250px auto;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.396);
+}
+
+.regform h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.regform .textlabel{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.regform .textinput{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 3px double rgb(3, 117, 155);
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+
+.floatLeft{
+    float: left;
+    position: relative;
+    left: 10px;
+}
+.floatRight{
+    float: right;
+    position: relative;
+    right: 10px;
+}
+
+.btn{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn button{
+    padding: 10px;
+    width: 40%;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: black;
+    color: azure;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px rgb(0, 0, 0);
+    border: 2px solid azure;
+}
+.clear{
+    clear: both; 
+   /* display: flow-root;
+   overflow: auto; */
+}
+
+.floatLeft input,.floatRight input{
+    transform: scale(1.5);
+    border: 2px double rgb(1, 91, 107);
+    accent-color: aqua;
+}
+
+.btn button:hover,.btn button:focus{
+    background-color: purple;
+}
+
+.btn button:active{
+    background-color: rgb(127, 15, 15);
+}
+
+.regform .textinput:hover{
+    background-color: aqua;
+}
+
+.floatLeft input:hover,.floatRight input:hover{
+    accent-color: black;
+}
+
+@media screen and (max-width:400px){
+
+    .regform{
+        font-size: 1rem;
+    }
+
+    .regform .textlabel{
+        text-align: center;
+    }
+
+    .btn button{
+        width: 100%;
+    }
+
+    .floatLeft,.floatRight{
+        float: none;
+        position: relative;
+        left: 35%;
+       text-align: justify;
+        margin-bottom: 5px;
+    }
+
+    .btn button{
+        font-weight: 600;
+        overflow: auto;
+    }
+
+    .regform .textinput{
+        font-size: 1rem;
+    }
+    
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="regform">
+        <h2>Sign Up</h2>
+        <form action="" method="get">
+            <div>
+                <label class="textlabel" for="username">User name</label>
+                <input class="textinput" type="text" id="username" name="username">
+            </div>
+            <div>
+                <label class="textlabel" for="password">Password</label>
+                <input class="textinput" type="password" id="password" name="password">
+            </div>
+            <div>
+                <label class="textlabel" for="email">Email</label>
+                <input class="textinput" type="email" id="email" name="email">
+            </div>
+            <div>
+                <div class="floatLeft">
+                    <input type="radio" id="male" value="male" name="gender">
+                    <label for="male">Male</label>
+                </div>
+              
+                <div class="floatRight">
+                    <input type="radio" id="female" value="female" name="gender">
+                <label for="female">Female</label>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="btn">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
